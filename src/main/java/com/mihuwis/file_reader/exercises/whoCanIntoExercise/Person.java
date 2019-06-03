@@ -1,5 +1,6 @@
 package com.mihuwis.file_reader.exercises.whoCanIntoExercise;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Person {
@@ -10,13 +11,14 @@ public class Person {
     public Person(String name, String phone) {
         this.name = name;
         this.phone = phone;
+        this.skills = new ArrayList<>();
     }
 
     public List<String> getSkills() {
         return skills;
     }
 
-    public void setSkills(String skill) {
+    public void addToSkillList(String skill) {
         this.skills.add(skill);
     }
 
